@@ -1,0 +1,19 @@
+class Student:
+    def _init_(self, name, marks1, marks2):
+        self.name = name
+        self.marks1 = marks1
+        self.marks2 = marks2
+
+    def average_marks(self):
+        return (self.marks1 + self.marks2) / 2
+
+    def _str_(self):
+        return f"{self.name} scored an average of {self.average_marks():.2f} marks"
+
+# Create two students
+student1 = Student("John", 80, 90)
+student2 = Student("Jane", 70, 85)
+
+# Print average marks for each student
+print(student1)
+print(student2)
